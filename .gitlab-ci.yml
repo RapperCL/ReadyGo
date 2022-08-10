@@ -4,13 +4,13 @@ variables:
   ENV_PRODUCTION: production
   ENV_TESTING: testing
   ENV_DEVELOPMENT: development
-  APP_KEY: app.misu.readyGo
+  APP_KEY: app.misu.platform.readyGo
 
 stages:
   - build
 
 
-build:
+build:prod:
   stage: build
   script:
     - source ./build.sh
