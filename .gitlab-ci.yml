@@ -10,7 +10,7 @@ stages:
   - build
 
 
-build:prod:
+build:
   stage: build
   script:
     - source ./build.sh
