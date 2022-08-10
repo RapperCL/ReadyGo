@@ -1,0 +1,18 @@
+image: public.ecr.aws/n6z7k8l7/alpine-java-build
+
+variables:
+  ENV_PRODUCTION: production
+  ENV_TESTING: testing
+  ENV_DEVELOPMENT: development
+  APP_KEY: app.misu.readyGo
+
+stages:
+  - build
+
+
+build:prod:
+  stage: build
+  script:
+    - source ./build.sh
+  only:
+    - master
