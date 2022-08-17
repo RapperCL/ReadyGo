@@ -17,6 +17,19 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>larkarch-releases</name>
+            <url>https://nexus.larkarch.io/repository/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>larkarch-snapshots</name>
+            <url>https://nexus.larkarch.io/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
     <build>
         <plugins>
